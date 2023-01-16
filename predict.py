@@ -29,7 +29,7 @@ def parse_args():
     ),
     parser.add_argument(
         "--model-path",
-        default="./logs/best_epoch_weights.pth",
+        default="./logs/01_fcn8s_new_500epochs_bs16_lr1e-2/best_epoch_weights.pth",
         type=str,
     ),
     parser.add_argument(
@@ -49,7 +49,7 @@ def parse_args():
     ),
     parser.add_argument(
         "--aux-branch",
-        default=True,
+        default=False,
         type=bool,
     ),
     parser.add_argument(
