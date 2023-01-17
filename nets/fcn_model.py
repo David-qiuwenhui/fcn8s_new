@@ -137,6 +137,8 @@ class FCN(nn.Module):
         )  # x(B,N,H,W)
 
         result["out"] = x
+        
+        '''
         # 启用辅助分类器
         if self.aux_classifier is not None:
             x = features["aux"]  # backbone["aux"]输出特征 (bs, 1024, 60, 60)
@@ -148,7 +150,8 @@ class FCN(nn.Module):
             result["aux"] = x  # OrderedDict{'out':tensor, 'aux':tensor}
             # 'out':Tensor(bs,N,480,480) 'aux':Tensor(bs,N,480,480)
             return (result["out"], result["aux"])
-
+        '''
+        
         return result["out"]
 
 

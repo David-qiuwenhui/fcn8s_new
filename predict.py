@@ -17,7 +17,7 @@ def parse_args():
     # predict, dir_predict, fps, video
     parser.add_argument(
         "--mode",
-        default="dir_predict",
+        default="fps",
         type=str,
         help="predict, dir_predict, fps, video",
     ),
